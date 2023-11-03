@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my celebrity crush</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>my celebrity <span>crush <3 </span>
+    </h1>
+  </header>
+  <div class="corpo-index">
+    <h2>primeiramente, escolha um dos artistas da lista abaixo: </h2>
+
+    <div class="artistas">
+      <input type="text" id="searchInput" placeholder="Digite o nome do artista: ">
+      <button type="submit" onclick="artistaEscolhido()">Próximo</button>
+      <div id="suggestions">
+      </div>
+      <img src="#" id="img" width="200px" height="200px" style="object-fit: cover; display: none;">
+      
+    </div>
+  </div>
+  <script src="search.js"></script>
+  <script src="procurarimg.js"></script>
+
+</body>
+
+</html>

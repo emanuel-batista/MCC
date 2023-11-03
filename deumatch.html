@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my celebrity crush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>my celebrity <span>crush <3 </span>
+            </h1>
+        </a>
+    </header>
+
+    <div class="container-deumatch">
+        <img src="" alt="" id="foto" width="700" height="700" style="object-fit: cover;">
+        <img src="" alt="" id="img" width="700" height="700" style="object-fit: cover;">
+    </div>
+
+    <script>
+        const imageUrl = localStorage.getItem("imageUrl");
+        const foto = localStorage.getItem("foto");
+
+     
+            // Display the imageUrl on the page
+            document.getElementById("img").src = imageUrl;
+        
+            alert(imageUrl);
+            alert(foto);
+       
+            // Display the imageUrl on the page
+            document.getElementById("foto").src = foto;
+      
+    </script>
+
+</body>
+
+</html>

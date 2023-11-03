@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}   
+
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+
+}
+
+header span{
+    color: #A70064;
+}
+
+.corpo-index{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#suggestions{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: #A70064;
+    font-weight: bold; 
+    text-align: justify;
+}
+
+.corpo-index input{
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    padding-left: 10px;
+    font-size: 1.2em;
+    border-bottom: #0000001e;
+    border-bottom-style: solid; 
+    border-bottom-width: 1px;
+    outline: none;
+}
+
+.corpo-index button{
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-radius: 70px;
+    background-color: #A70064;
+    color: #EFEFEF;
+    font-size: 1.2em;
+    outline: none;
+    cursor: pointer;
+}
+
+.corpo-index h2{
+    color: black;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+#start-camera{
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-radius: 70px;
+    background-color: #c9c9c9;
+    color: #000000;
+    font-size: 1.2em;
+    outline: none;
+    cursor: pointer;
+}
+
+#capture-photo{
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-radius: 70px;
+    background-color: #A70064;
+    color: #EFEFEF;
+    font-size: 1.2em;
+    outline: none;
+    cursor: pointer;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.botoes-tirarfoto a{
+    padding-left: 10px;
+    font-size: 1.2em;
+    color: #A70064;
+    font-weight: bold;
+    text-decoration: none;
+}
