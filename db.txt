@@ -1,0 +1,11 @@
+create database artistas;
+use artistas;
+create table artistas(
+	`year` int,
+    `rank` int,
+    artist varchar(50)
+);
+
+#use o import wizard no workbench clicando com o botão direito em cima do nome da tabela "artistas" e importa o csv
+
+#site da engine de pesquisa: https://serper.dev/logs

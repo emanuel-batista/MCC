@@ -32,6 +32,12 @@ function artistaEscolhido() {
                 // Place it in the HTML
                 document.getElementById("img").src = imageUrl;
                 localStorage.setItem("artista", artista);
+                /* create an array for evey set item artista */
+                var artistas = [];
+                artistas.push(artista);
+                localStorage.setItem("artistas", JSON.stringify(artistas));
+              
+
                 localStorage.setItem("imageUrl", imageUrl);
                 window.location.href = "tirarfoto.html";
             }

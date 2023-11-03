@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my celebrity crush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>my celebrity <span>crush <3 </span>
+            </h1>
+        </a>
+    </header>
+
+    <div class="match">
+        <h2 class="oii">deu match!</h2>
+        <div class="igual">
+            <span class="igual-span">=</span>
+            <div class="voce">
+            <h3>você e <span id="artista"></span> são</h3>
+            <h2><span id="numero"></span>% compatíveis</h2>
+            </div>
+        </div>
+
+        <button><a href="index.html">novo crush?</a></button>
+    </div>
+
+    <script>
+        let artista = localStorage.getItem("artista");
+        document.getElementById("artista").innerHTML = artista;
+
+        function generateRandomNumber() {
+            var randomNumber = Math.floor(Math.random() * 100) + 1;
+            if (randomNumber > 60) {
+                return randomNumber;
+            } else {
+                return generateRandomNumber();
+            }
+
+        }
+        var myNumber = generateRandomNumber();
+        console.log(myNumber);
+
+        function animateNumbers() {
+            var counter = 0;
+            var interval = setInterval(function() {
+                document.getElementById("numero").innerHTML = counter;
+                counter++;
+                if (counter > 100) {
+                    clearInterval(interval);
+                    document.getElementById("numero").innerHTML = myNumber;
+                    document.getElementsByClassName("oii").innerHTML = "deu match?" + myNumber + "%";
+                }
+            }, 10);
+        }
+
+        animateNumbers();
+
+    </script>
+</body>
+
+</html>

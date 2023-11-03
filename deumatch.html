@@ -19,10 +19,13 @@
 
     <div class="container-deumatch">
         <img src="" alt="" id="foto" width="700" height="700" style="object-fit: cover;">
+        <h2>+</h2>
         <img src="" alt="" id="img" width="700" height="700" style="object-fit: cover;">
+        <a href="compatibilidade.html"><button id="button-deumatch">deu match?</button></a>
     </div>
 
     <script>
+ 
         const imageUrl = localStorage.getItem("imageUrl");
         const foto = localStorage.getItem("foto");
 
@@ -30,8 +33,6 @@
             // Display the imageUrl on the page
             document.getElementById("img").src = imageUrl;
         
-            alert(imageUrl);
-            alert(foto);
        
             // Display the imageUrl on the page
             document.getElementById("foto").src = foto;
